@@ -305,11 +305,6 @@ address { font-style: normal; }
   );
 }
 
-/* Fallback when no image */
-.hero-bg:not(:has(.hero-bg-img[src])),
-.hero-bg-img[src="images/hero-bg.jpg"]:not([complete]) ~ * {
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 100%);
-}
 
 .hero-content {
   position: relative;
