@@ -267,6 +267,8 @@
           method="POST"
           id="consultForm"
         >
+          <!-- Honeypot: hidden from humans, bots fill it in and get rejected -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name <span class="required">*</span></label>
