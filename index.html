@@ -31,6 +31,7 @@
         <li><a href="#approach" class="nav-link">Our Approach</a></li>
         <li><a href="#why-us" class="nav-link">Why Us</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#consultation" class="nav-link">Free Consultation</a></li>
         <li><a href="tel:3034866876" class="nav-cta">Call Us: (303) 486-6876</a></li>
       </ul>
     </nav>
@@ -232,6 +233,77 @@
             <p class="feature-text">Our structured ramp-up process is built to deliver measurable growth, profitability, and long-term competitive advantage.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONSULTATION FORM
+  ============================================================ -->
+  <section class="consult-form section" id="consultation">
+    <div class="container">
+      <div class="consult-form-inner">
+
+        <div class="consult-form-text fade-in">
+          <p class="section-eyebrow">Let's Talk</p>
+          <h2 class="section-title">Schedule a Consultation</h2>
+          <p class="body-text">Ready to take the next step? Fill out the form and we'll be in touch within one business day to schedule your consultation.</p>
+          <ul class="consult-promises">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Response within one business day
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              No-obligation initial consultation
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Personalized to your business needs
+            </li>
+          </ul>
+        </div>
+
+        <form
+          class="consult-form-card fade-in"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          id="consultForm"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(303) 555-0100" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">How Can We Help? <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your business and what you're looking to achieve..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send My Request</button>
+          <p class="form-note">* Required fields. Your information is kept strictly confidential.</p>
+
+          <!-- Success / error messages -->
+          <div class="form-success" id="formSuccess" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Thank you! We'll be in touch within one business day.
+          </div>
+        </form>
+
       </div>
     </div>
   </section>

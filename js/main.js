@@ -98,6 +98,36 @@
   }
   window.addEventListener('scroll', updateActiveNav, { passive: true });
 
+  /* ---- Consultation Form (Formspree AJAX) ---- */
+  const consultForm = document.getElementById('consultForm');
+  if (consultForm) {
+    consultForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const btn = consultForm.querySelector('.form-submit');
+      const success = document.getElementById('formSuccess');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      try {
+        const res = await fetch(consultForm.action, {
+          method: 'POST',
+          body: new FormData(consultForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          consultForm.reset();
+          success.hidden = false;
+          success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          btn.textContent = 'Something went wrong — please call us directly.';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Error sending — please call us directly.';
+        btn.disabled = false;
+      }
+    });
+  }
+
   /* ---- Smooth scroll for browsers that don't support CSS scroll-behavior ---- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
