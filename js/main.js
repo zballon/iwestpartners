@@ -117,6 +117,7 @@
           consultForm.reset();
           success.hidden = false;
           success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          btn.textContent = 'Sent!';
         } else {
           btn.textContent = 'Something went wrong — please call us directly.';
           btn.disabled = false;
