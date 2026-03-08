@@ -299,9 +299,9 @@ address { font-style: normal; }
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(11, 18, 30, 0.88) 0%,
-    rgba(22, 35, 58, 0.78) 50%,
-    rgba(22, 35, 58, 0.5) 100%
+    rgba(11, 18, 30, 0.72) 0%,
+    rgba(22, 35, 58, 0.60) 50%,
+    rgba(22, 35, 58, 0.35) 100%
   );
 }
 
